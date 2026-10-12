@@ -1,0 +1,8 @@
+{
+  "accounts": ["so____ya95"],
+  "posts": [],
+  "thresholds": [300],
+  "posts_per_account": 10,
+  "alert_existing_posts": false,
+  "interval_minutes": 15
+}
