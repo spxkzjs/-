@@ -104,6 +104,9 @@ def parse_view_text(text):
     return None
 
 
+NOT_PUBLIC_YET = "not_public_yet"
+
+
 def fetch_views(browser, username, code):
     """세 가지 방법을 차례로 시도한다. 하나가 막혀도 나머지로 읽을 수 있게."""
     url = POST_URL.format(user=username, code=code)
@@ -113,6 +116,9 @@ def fetch_views(browser, username, code):
         m = VIEW_RE.search(r.text)
         if m:
             return int(m.group(1))
+        # 막 올린 글은 쓰레드가 한동안 조회수를 외부에 공개하지 않는다 (작성자만 볼 수 있음).
+        if '"view_counts":null' in r.text:
+            return NOT_PUBLIC_YET
     except requests.RequestException as e:
         log(f"  요청 실패, 브라우저로 재시도: {e}")
     page = browser.page()
@@ -217,6 +223,9 @@ def run_once(config, dry_run):
             except Exception as e:
                 log(f"  {key} 조회 실패: {e}")
                 errors.append(f"{key} 조회 실패")
+                continue
+            if views == NOT_PUBLIC_YET:
+                log(f"  {key}: 새 글이라 아직 조회수가 공개되지 않음 (공개되면 확인)")
                 continue
             if views is None:
                 log(f"  {key} 조회수를 찾지 못했습니다 (페이지 구조 변경 가능성)")
