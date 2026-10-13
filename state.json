@@ -235,54 +235,54 @@
       "notified": [
         300
       ],
-      "views": 1588,
-      "checked_at": "2026-10-13T22:01:14+00:00"
+      "views": 1591,
+      "checked_at": "2026-10-13T22:31:04+00:00"
     },
     "so____ya95/DecA-dfieJg": {
       "notified": [],
-      "views": 53,
-      "checked_at": "2026-10-13T22:01:15+00:00"
+      "views": 54,
+      "checked_at": "2026-10-13T22:31:05+00:00"
     },
     "so____ya95/DecNUozCdW1": {
       "notified": [
         300
       ],
-      "views": 717,
-      "checked_at": "2026-10-13T22:01:12+00:00"
+      "views": 718,
+      "checked_at": "2026-10-13T22:31:03+00:00"
     },
     "so____ya95/DecNUgUifjI": {
       "notified": [],
-      "views": 23,
-      "checked_at": "2026-10-13T22:01:13+00:00"
+      "views": 24,
+      "checked_at": "2026-10-13T22:31:03+00:00"
     },
     "so____ya95/DecWA8qmY14": {
       "notified": [
         300
       ],
-      "views": 1213,
-      "checked_at": "2026-10-13T22:01:11+00:00"
+      "views": 1229,
+      "checked_at": "2026-10-13T22:31:02+00:00"
     },
     "so____ya95/DecWA1eGWyl": {
       "notified": [],
-      "views": 49,
-      "checked_at": "2026-10-13T22:01:12+00:00"
+      "views": 52,
+      "checked_at": "2026-10-13T22:31:02+00:00"
     },
     "so____ya95/DecfCeik8dl": {
       "notified": [
         300
       ],
-      "views": 1515,
-      "checked_at": "2026-10-13T22:01:10+00:00"
+      "views": 1573,
+      "checked_at": "2026-10-13T22:31:01+00:00"
     },
     "so____ya95/DecfCW8E9JQ": {
       "notified": [],
-      "views": 69,
-      "checked_at": "2026-10-13T22:01:10+00:00"
+      "views": 73,
+      "checked_at": "2026-10-13T22:31:01+00:00"
     }
   },
   "accounts_seen": [
     "so____ya95"
   ],
-  "fail_runs": 1,
+  "fail_runs": 0,
   "broken": false
 }
